@@ -1,0 +1,31 @@
+:root
+{
+     --green: #1BA94C; /* variable for green color */
+    --blue: #01A4FF; /* varibale for blue color */
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.skillsReport{ /* top desciption about HackerRank */
+    height: 43px;
+    width: 100%;
+    background-color: #F3F7F7;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #738f93;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 8em;
+}
+.skillsReport a{ /* a tag styling in .skillsReport */
+    color: var(--green);
+    text-decoration: none;
+}
+.skillsReport a:hover{ /* a tag styling on hover in .skillsReort */
+    color: var(--green);
+    text-decoration: var(--green);
+}
