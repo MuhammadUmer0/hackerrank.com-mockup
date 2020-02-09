@@ -31,7 +31,8 @@
 /* a tag styling on hover in .topBar */
 .topBar a:hover {
   color: var(--green);
-  text-decoration: var(--green);
+  text-decoration: underline;
+
 }
 /* nav and logo styling */
 header {
@@ -42,17 +43,19 @@ header {
   flex-direction: row;
   justify-content: space-around;
   background-color: var(--blue);
+  color: var(--navItems);
 }
 /* logo img dimentions */
 header img {
   height: 20px;
   width: 160px;
-  
 }
 /* nav styling */
 nav {
-  width: 40%;
+  height: 45px;
+    width: 40%;
   background-color: white;
+  margin-top: 1.5em;
 }
 /* nav unordered list styling */
 nav ul {
@@ -66,8 +69,14 @@ nav li {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: var(--navItems);
-
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 1em;
 }
 /*nav button styling*/
 .navBtns button{
