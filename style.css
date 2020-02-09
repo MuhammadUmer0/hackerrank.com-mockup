@@ -1,31 +1,77 @@
-:root
-{
-     --green: #1BA94C; /* variable for green color */
-    --blue: #01A4FF; /* varibale for blue color */
+:root {
+  --green: #1ba94c; /* variable for green color */
+  --blue: #01a4ff;  /* varibale for blue color */
+  --navItems: #39424e; /* variable for nav items */
 }
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
-.skillsReport{ /* top desciption about HackerRank */
-    height: 43px;
-    width: 100%;
-    background-color: #F3F7F7;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #738f93;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 8em;
+/* top desciption about HackerRank */
+.topBar {
+  height: 43px;
+  width: 100%;
+  background-color: #f3f7f7;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #738f93;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8.5em;
 }
-.skillsReport a{ /* a tag styling in .skillsReport */
-    color: var(--green);
-    text-decoration: none;
+/* a tag styling in .topBar */
+.topBar a {
+  color: var(--green);
+  text-decoration: none;
 }
-.skillsReport a:hover{ /* a tag styling on hover in .skillsReort */
-    color: var(--green);
-    text-decoration: var(--green);
+/* a tag styling on hover in .topBar */
+.topBar a:hover {
+  color: var(--green);
+  text-decoration: var(--green);
+}
+/* nav and logo styling */
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--blue);
+}
+/* logo img dimentions */
+header img {
+  height: 20px;
+  width: 160px;
+  
+}
+/* nav styling */
+nav {
+  width: 40%;
+  background-color: white;
+}
+/* nav unordered list styling */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*nav list items styling*/
+nav li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--navItems);
+
+}
+/*nav button styling*/
+.navBtns button{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
 }
