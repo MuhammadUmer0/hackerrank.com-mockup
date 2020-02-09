@@ -1,9 +1,10 @@
 :root {
   --green: #1ba94c; /* variable for green color */
-  --blue: #01a4ff;  /* varibale for blue color */
+  --blue: #01a4ff; /* varibale for blue color */
   --navItems: #39424e; /* variable for nav items */
   --sectionH1: #576871; /*color for h1 in section*/
   --sectionH1Bold: #39424e; /*color for h1 bold in section*/
+  --modesBgColor: #F5F9F9;
 }
 * {
   margin: 0;
@@ -34,7 +35,6 @@
 .topBar a:hover {
   color: var(--green);
   text-decoration: underline;
-
 }
 /* nav and logo styling */
 header {
@@ -54,8 +54,8 @@ header img {
 }
 /* nav styling */
 nav {
-  height: 45px; 
-width: 50%;
+  height: 45px;
+  width: 50%;
   background-color: white;
   margin-top: 1.5em;
   /* position: fixed; */
@@ -73,120 +73,129 @@ nav li {
   font-size: 15px;
   line-height: 20px;
 }
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
-nav a:hover{
-    text-decoration: none;
-    border-bottom: 2px solid var(--green);
-    padding-bottom: 1em;
+nav a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: 1em;
 }
 /*nav button styling*/
-.navBtns button{
-    height: 50px;
-    width: 50px;
-    background-color: yellow;
+.navBtns button {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
 }
 /*contains logo and nav*/
-.logoNav{
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #738f93;
-    align-items: center;
+.logoNav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #738f93;
+  align-items: center;
 }
-section{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+section {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-section h1{
-    font-size: 34px;
-    line-height: 60px;
-    font-weight: 400;
-    color: var(--sectionH1);
+section h1 {
+  font-size: 34px;
+  line-height: 60px;
+  font-weight: 400;
+  color: var(--sectionH1);
 }
-h1 .bold{
-    font-weight: bolder;
-    color: var(--sectionH1Bold);
+h1 .bold {
+  font-weight: bolder;
+  color: var(--sectionH1Bold);
 }
-section button{
-    height: 50px;
-    width: 170px;
-    background-color: var(--green);
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    font-family: "Source Code Pro", sans-serif;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: none;
-    cursor: pointer;
-    outline: none;
+section button {
+  height: 50px;
+  width: 170px;
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Source Code Pro", sans-serif;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
-section button:hover{
-    height: 50px;
-    width: 170px;
-    background-color: var(--green);
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    font-family: "Source Code Pro", sans-serif;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 4px 12px rgba(27, 169, 76, 0.5);
+section button:hover {
+  height: 50px;
+  width: 170px;
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Source Code Pro", sans-serif;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(27, 169, 76, 0.5);
 }
-section p{
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: var(--sectionH1);
-    margin-bottom: 4em;
+section p {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: var(--sectionH1);
+  margin-bottom: 4em;
 }
-.brandsImg{
-    height: 100px;
-    width: 85%;
+.brandsImg {
+  height: 100px;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.brandsImg .atlassian {
+  height: 47px;
+  width: 49px;
+}
+.brandsImg .booking {
+  height: 28px;
+  width: 153px;
+}
+.brandsImg .dropbox {
+  height: 47px;
+  width: 54px;
+}
+.brandsImg .goldman {
+  height: 49px;
+  width: 115px;
+}
+.brandsImg .linkedin {
+  height: 31px;
+  width: 115px;
+}
+.brandsImg .stripe {
+  height: 42px;
+  width: 97px;
+}
+.brandsImg .vmware {
+  height: 27px;
+  width: 141px;
+}
+.brandsImg .washington {
+  height: 60px;
+  width: 67px;
+}
+.modes{
+    height: 370px;
+    width: 100%;
+    background-color: var(--modesBgColor);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-}
-.brandsImg .atlassian{
-    height: 47px;
-    width: 49px;
-}
-.brandsImg .booking{
-    height: 28px;
-    width: 153px;
-}
-.brandsImg .dropbox{
-    height: 47px;
-    width: 54px;
-}
-.brandsImg .goldman{
-    height: 49px;
-    width: 115px;
-}
-.brandsImg .linkedin{
-    height: 31px;
-    width: 115px;
-}
-.brandsImg .stripe{
-    height: 42px;
-    width: 97px;
-}
-.brandsImg .vmware{
-    height: 27px;
-    width: 141px;
-}
-.brandsImg .washington{
-    height: 60px;
-    width: 67px;
+    justify-content: center;
 }
