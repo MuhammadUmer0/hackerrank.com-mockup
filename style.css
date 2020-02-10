@@ -1,11 +1,11 @@
 :root {
-  --green: #1ba94c; /* variable for green color */
+  --green: #1ba94d; /* variable for green color */
   --blue: #01a4ff; /* varibale for blue color */
   --navItems: #39424e; /* variable for nav items */
   --sectionH1: #576871; /*color for h1 in section*/
   --sectionH1Bold: #39424e; /*color for h1 bold in section*/
-  --modesBgColor: #F5F9F9;/*modes background color*/
-  --modesColor: #18484e;/*modes color*/
+  --modesBgColor: #f5f9f9; /*modes background color*/
+  --modesColor: #18484e; /*modes color*/
   --modesColH3: #39424e; /*modes h3 color*/
   --modesColP: #637681; /*modes p color*/
 }
@@ -193,36 +193,48 @@ section p {
   height: 60px;
   width: 67px;
 }
-.modes{
-    height: 370px;
-    width: 100%;
-    background-color: var(--modesBgColor);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.modes {
+  height: 370px;
+  width: 100%;
+  background-color: var(--modesBgColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-.modesCol{
-    display: flex;
-    flex-direction: column;
-height: 300px;
-    width: 320px;
-    background-color: var(--blue);
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-color: var(--modesColor);
+.modesCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 320px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--modesColor);
 }
-.modesCol h3{
- font-family: "Source Code Pro", sans-serif;
- font-weight: 700;
- font-size: 27px;
- line-height: 36px;
- color: var(--modesColH3);
+.modesCol h3 {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+  color: var(--modesColH3);
 }
-.modesCol p{
-    font-size: 20px;
-    line-height: 400;
-    line-height: 31px;
-    
+.modesCol p {
+  font-size: 20px;
+  line-height: 400;
+  line-height: 31px;
+}
+.modesBtn{
+    height: 60px;
+    width: 200px;
+    border: 1px solid var(--green);
+    background-color: white;
+    color: var(--green);
+    cursor: pointer;
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    border-radius: 2px;
 }
