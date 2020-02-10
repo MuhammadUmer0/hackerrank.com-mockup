@@ -243,4 +243,36 @@ section p {
     height: 280px;
     width: 100%;
     background-color: var(--devloperSkillBg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.developerSkill img{
+    height: 278px;
+    width: 555px;
+}
+.developerSkill .heading-btn{
+    display: flex;
+    flex-direction: column;
+
+}
+.developerSkill h3{
+font-family: "Source Code Pro", monospace;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+color: white;
+text-transform: capitalize;
+}
+.developerSkill p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+}
+.developerSkill button{
+    height: 49px;
+    width: 164px;
+    
 }
