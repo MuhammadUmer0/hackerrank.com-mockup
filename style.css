@@ -8,6 +8,7 @@
   --modesColor: #18484e; /*modes color*/
   --modesColH3: #39424e; /*modes h3 color*/
   --modesColP: #637681; /*modes p color*/
+  --devloperSkillBg: #060520; /*background color for developer skill*/
 }
 * {
   margin: 0;
@@ -225,16 +226,21 @@ section p {
   line-height: 400;
   line-height: 31px;
 }
-.modesBtn{
-    height: 60px;
-    width: 200px;
-    border: 1px solid var(--green);
-    background-color: white;
-    color: var(--green);
-    cursor: pointer;
-    font-family: "Source Code Pro", sans-serif;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 700;
-    border-radius: 2px;
+.modesBtn {
+  height: 60px;
+  width: 200px;
+  border: 1px solid var(--green);
+  background-color: white;
+  color: var(--green);
+  cursor: pointer;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+.developerSkill{
+    height: 280px;
+    width: 100%;
+    background-color: var(--devloperSkillBg);
 }
