@@ -9,6 +9,8 @@
   --modesColH3: #39424e; /*modes h3 color*/
   --modesColP: #637681; /*modes p color*/
   --devloperSkillBg: #060520; /*background color for developer skill*/
+  --developerSkillBtn: #01a4ff; /*developerSkill button background button*/
+  --footerColHeading: #576871; /*footer column heading color*/
 }
 * {
   margin: 0;
@@ -239,40 +241,71 @@ section p {
   font-weight: 700;
   border-radius: 2px;
 }
-.developerSkill{
-    height: 280px;
-    width: 100%;
-    background-color: var(--devloperSkillBg);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.developerSkill {
+  height: 280px;
+  width: 100%;
+  background-color: var(--devloperSkillBg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.developerSkill img{
-    height: 278px;
-    width: 555px;
-}
-.developerSkill .heading-btn{
-    display: flex;
-    flex-direction: column;
+.developerSkill img {
+  height: 278px;
+  width: 555px;
 
 }
-.developerSkill h3{
-font-family: "Source Code Pro", monospace;
-font-weight: 700;
-font-size: 32px;
-line-height: 43px;
-color: white;
-text-transform: capitalize;
+.developerSkill .heading-btn {
+  display: flex;
+  flex-direction: column;
+  height: 155px;
+  justify-content: space-around;
 }
-.developerSkill p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: white;
+.developerSkill h3 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: white;
+  text-transform: capitalize;
 }
-.developerSkill button{
-    height: 49px;
-    width: 164px;
-    
+.developerSkill p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
 }
+.developerSkill button {
+  height: 49px;
+  width: 164px;
+  background-color: var(--developerSkillBtn);
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+footer{
+  height: 455px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footerCol{
+  height: 100px;
+  width: 50px;
+  background-color: yellow;
+}
+.footerColHeading{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--footerColHeading);
+  margin-bottom: 1em;
+  
+}
+
