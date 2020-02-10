@@ -4,7 +4,10 @@
   --navItems: #39424e; /* variable for nav items */
   --sectionH1: #576871; /*color for h1 in section*/
   --sectionH1Bold: #39424e; /*color for h1 bold in section*/
-  --modesBgColor: #F5F9F9;
+  --modesBgColor: #F5F9F9;/*modes background color*/
+  --modesColor: #18484e;/*modes color*/
+  --modesColH3: #39424e; /*modes h3 color*/
+  --modesColP: #637681; /*modes p color*/
 }
 * {
   margin: 0;
@@ -197,5 +200,29 @@ section p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+.modesCol{
+    display: flex;
+    flex-direction: column;
+height: 300px;
+    width: 320px;
+    background-color: var(--blue);
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+color: var(--modesColor);
+}
+.modesCol h3{
+ font-family: "Source Code Pro", sans-serif;
+ font-weight: 700;
+ font-size: 27px;
+ line-height: 36px;
+ color: var(--modesColH3);
+}
+.modesCol p{
+    font-size: 20px;
+    line-height: 400;
+    line-height: 31px;
+    
 }
